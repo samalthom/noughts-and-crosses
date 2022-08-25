@@ -1,8 +1,5 @@
-from sqlalchemy import null
-
-
 class Piece():
-    def __init__(self,type=null):
+    def __init__(self,type=None):
         self.type = type
         if type == "c":
             self.value = "X"
