@@ -32,3 +32,18 @@ class Game():
         if np.all(self.board != " "):
             return "d"
         return False
+
+class Human():
+    while True:
+        try:
+            def next_move(self,state):
+                move = input("What is your next move?")
+                row = move[0]
+                col = move[2]
+                move = [int(row),int(col)]
+                if not state.valid(row,col):
+                    print("Space must be empty. Try again.")
+                else:
+                    return move
+        except ValueError:
+            print("Must be between 0,0 and 2,2")
