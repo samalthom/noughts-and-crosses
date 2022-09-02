@@ -34,3 +34,5 @@ def run_game(player1=Human(), player2=Human()):
             elif state.winner() == "d":
                 print("It's a draw.")
                 return
+
+run_game()
