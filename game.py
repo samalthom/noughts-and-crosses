@@ -36,9 +36,10 @@ class Game():
 
 
 class Human():
-    while True:
-        try:
-            def next_move(self, state):
+    def next_move(self, state):
+        while True:
+            try:
+
                 move = input("What is your next move?")
                 row = move[0]
                 col = move[2]
@@ -47,5 +48,5 @@ class Human():
                     print("Space must be empty. Try again.")
                 else:
                     return move
-        except ValueError:
-            print("Must be between 0,0 and 2,2")
+            except ValueError:
+                print("Must be between 0,0 and 2,2")

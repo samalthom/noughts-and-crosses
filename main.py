@@ -2,6 +2,7 @@ from game import Game
 from game import Human
 
 
+
 def run_game(player1=Human(), player2=Human()):
     state = Game()
     print(state.board)
@@ -35,5 +36,4 @@ def run_game(player1=Human(), player2=Human()):
                 return
 
 
-print("Hello")
 run_game()
