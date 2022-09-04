@@ -50,3 +50,11 @@ class Human:
                     return move
             except ValueError:
                 print("Must be between 0,0 and 2,2")
+
+
+class Minimax:
+    def next_move(self):
+        pass
+
+    def get_value(self):
+        pass
