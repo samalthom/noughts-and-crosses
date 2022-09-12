@@ -1,3 +1,5 @@
+import math
+
 import numpy as np
 
 
@@ -35,6 +37,8 @@ class Game:
             return "d"
         return False
 
+    def get_actions(self):
+        return np.where(self.board == " ")
 
 class Human:
     def next_move(self, state):
@@ -53,8 +57,13 @@ class Human:
 
 
 class Minimax:
-    def next_move(self):
-        pass
+    def next_move(self, state):
+        player = state.next_player
+
+        best_action = None
+        best_value = -1 * math.inf
+        for action in state.get_actions():
+            new_state = state.move(action[0], action[1])
 
     def get_value(self):
         pass
